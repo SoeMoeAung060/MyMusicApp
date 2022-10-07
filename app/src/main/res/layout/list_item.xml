@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/tan_background"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/artist_image_view"
+        android:src="@drawable/profile_1"
+        android:scaleType="centerCrop"
+        android:layout_width="@dimen/list_item_height"
+        android:layout_height="@dimen/list_item_height"/>
+
+    <LinearLayout
+        android:id="@+id/text_container"
+        android:paddingLeft="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:textColor="@color/text_white_color"
+            android:layout_marginBottom="10dp"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:id="@+id/song_name"
+            tools:text="Photograph"/>
+
+
+        <TextView
+            android:textColor="@color/text_white_color"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:id="@+id/artist_name"
+            tools:text="Ed Sheeran"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
